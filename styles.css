@@ -22,10 +22,13 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .flex > div,
-.flex > ul {
+.flex > ul,
+.flex > img {
   flex: 1;
   /* will take up 50% of the width */
 }
@@ -47,6 +50,16 @@ h1 {
 
   color: #1c1c1c;
 }
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  margin: 1.5rem 0;
+}
 /* can update to have variable color and less repetitive */
 /* give all rem units also  */
 h3 {
@@ -58,6 +71,23 @@ h3 {
   text-transform: capitalize;
   color: #1c1c1c;
 }
+
+p {
+  margin: 1rem 0;
+}
+
+.btn-primary {
+  padding: 0.7rem;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 500;
+  background: #4fa0db;
+  border: 1px solid #4fa0db;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
 .navbar {
   font-size: 18px;
   /* font-weight: 500; */
