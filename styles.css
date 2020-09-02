@@ -105,9 +105,9 @@ p {
 }
 
 .skill {
-  height: 5rem;
-  width: 5rem;
-  margin: 0.6rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin: 1rem;
 }
 
 .bg-light-grey {
@@ -162,6 +162,7 @@ p {
   display: block;
 }
 
+/* media query for navbar */
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
