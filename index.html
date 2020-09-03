@@ -9,39 +9,45 @@
   </head>
   <body>
     <!-- nav part -->
-    <div class="container">
-      <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fas fa-bars"></i>
-        </span>
-        <a href="#" class="logo">Alex Pearl</a>
-        <ul class="main-nav" id="js-menu">
-          <li>
-            <a href="#" class="nav-links">Skills</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">Experience</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">Works</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">About</a>
-          </li>
-          <li>
-            <a href="#" class="nav-links">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
 
-    <!-- header -->
-    <header>
+    <nav>
       <div class="container">
         <div class="flex">
           <div>
+            <a href="#" class="logo">Alex Pearl</a>
+          </div>
+          <button class="hamburger" id="hamburger">
+            <img class="open" src="./img/icon-hamburger.svg" alt="" />
+            <img class="close" src="./img/icon-close.svg" alt="" />
+          </button>
+          <ul id="menu">
+            <li>
+              <a href="#" class="nav-links">Skills</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">Experience</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">Works</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header>
+      <div class="container top">
+        <div class="flex">
+          <div>
             <h3>Hi, I'm Alex Pearl</h3>
-            <h1>Student Front End Developer</h1>
+            <h1>Student Developer</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -102,6 +108,11 @@
               fugiat nulla pariatur.
             </p>
           </div>
+        </div>
+
+        <div>
+          <h2>Portfolio / Works</h2>
+          <div class="flex bg-light-grey"></div>
         </div>
       </div>
     </main>
