@@ -54,6 +54,8 @@ body {
   justify-content: flex-start;
   padding-top: 0.5rem;
 }
+
+/* spaces out the imgs within the divs */
 /* .flex > div:first-child {
   padding-right: 20px;
 }
@@ -140,6 +142,12 @@ p {
   height: 4rem;
   width: 4rem;
   margin: 1rem;
+}
+
+.social-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .social {
@@ -230,12 +238,27 @@ a.logo {
   text-transform: uppercase;
 }
 
+/* keeps img to left and takes up less space */
+.flex .about-pic,
+.flex .profile {
+  flex: 0.4;
+}
+
+.flex .profile {
+  margin-left: 2rem;
+}
+.flex .about-pic {
+  margin-right: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   .flex :not(.bg-light-grey),
   .portfolio {
     flex-direction: column;
   }
-
+  .flex .social-container {
+    flex-direction: row;
+  }
   nav {
     padding: 0.3rem;
   }
@@ -298,5 +321,11 @@ a.logo {
 
   .profile {
     margin-top: 2rem;
+  }
+  .flex .profile {
+    margin-left: 0rem;
+  }
+  .flex .about-pic {
+    margin-right: 0rem;
   }
 }
