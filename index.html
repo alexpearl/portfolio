@@ -22,19 +22,19 @@
           </button>
           <ul id="menu">
             <li>
-              <a href="#" class="nav-links">Skills</a>
+              <a href="#skills" class="nav-links">Skills</a>
             </li>
             <li>
-              <a href="#" class="nav-links">Experience</a>
+              <a href="#experience" class="nav-links">Experience</a>
             </li>
             <li>
-              <a href="#" class="nav-links">Works</a>
+              <a href="#works" class="nav-links">Works</a>
             </li>
             <li>
-              <a href="#" class="nav-links">About</a>
+              <a href="#about" class="nav-links">About</a>
             </li>
             <li>
-              <a href="#" class="nav-links">Contact</a>
+              <a href="#contact" class="nav-links">Contact</a>
             </li>
           </ul>
         </div>
@@ -56,10 +56,11 @@
               fugiat nulla pariatur.
             </p>
             <div>
-              <button class="btn-primary">Learn More About Me</button>
-             
+              
+                <a href="#about"><button class="btn-primary" >Learn More About Me</button></a>
+            
               <img class="download-icon" src="./img/download.svg" alt="" />
-              <a class="resume" href="./img/download.svg">View My Resume</a>
+              <a class="resume" href="">View My Resume</a>
             </div>
           </div>
           <img class="profile" src="./img/profile.svg" alt="" />
@@ -68,9 +69,9 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main >
       <div class="container">
-        <h2>Skills & Technologies</h2>
+        <h2 id="skills" >Skills & Technologies</h2>
         <div class="flex bg-light-grey">
           <!-- need to fix png -> svg -->
           <img class="skill" src="./img/html-5.svg" alt="" />
@@ -84,7 +85,7 @@
         </div>
 
         <div>
-          <h2>Related Experience</h2>
+          <h2 id="experience">Related Experience</h2>
           <hr />
           <div>
             <h4>Web Design Intern - <a href="https://jpgdesigns.com/" target="_blank">JPG Designs</a></h4>
@@ -111,7 +112,7 @@
         </div>
 
         <div>
-          <h2>Portfolio / Works</h2>
+          <h2 id="works">Portfolio / Works</h2>
           <div class="flex bg-light-grey portfolio">
             <div class="card">
               <img src="./img/wordpress.svg" alt="">
@@ -138,12 +139,12 @@
             </div>
           </div>
           <div class="center">
-            <button class="btn-primary btn-yellow ">Check out My Github For More</button>
+            <a target="blank" href="https://github.com/alexpearl"><button class="btn-primary btn-yellow ">Check out My Github For More</button></a>
           </div>
         </div>
 
         <div>
-          <h2>About Me</h2>
+          <h2 id="about">About Me</h2>
           <div class="flex">
             <img class="about-pic" src="./img/hiking.svg" alt="">
             <div>
@@ -169,8 +170,8 @@
         </div>
 
         <div>
-          <h2>Contact Me</h2>
-          <div class="flex">
+          <h2 id="contact" class="negative">Contact Me</h2>
+          <div class="flex flex-top">
             <div>
               <p>
                 Whether you have a question regarding my page or interested in working together, feel free to connect with me on any of my social links above or fill in this form! 
@@ -199,7 +200,44 @@
     </div>
 
     <!-- footer -->
-    <footer></footer>
+    <footer>
+      <div class="container bg-light-grey">
+        <div class="flex column ">
+          <div >
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h4>Personal Links</h4>
+            <ul>
+              <li><a target="blank" href="https://github.com/alexpearl">Github</a></li>
+              <li><a target="blank" href="https://www.linkedin.com/in/alexanderpearl3/">LinkedIn</a></li>
+              <li><a target="blank" href="https://www.facebook.com/alex.pearl.56">Facebook</a></li>
+              <li><a target="blank" href="https://www.instagram.com/alexpearl3/">Instagram</a></li>
+              <li><a target="blank" href="https://twitter.com/alex_pearl14">Twitter</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:pearla124@mail.sacredheart.edu">pearla124@mail.sacredheart.edu</a></li>
+              <li><a href="tel:508-818-0388">508-818-0388</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <hr id="hr-foot">
+        <p>Designed & Developed By Alex Pearl @2020</p>
+      </div>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>

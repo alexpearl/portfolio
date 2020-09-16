@@ -171,6 +171,19 @@ hr {
   padding: 0;
 }
 
+hr#hr-foot {
+  width: 60%;
+  margin: auto;
+  border-top: 2px solid var(--dark);
+  padding-top: 0;
+}
+
+/* adjecent sibling targets */
+hr + p {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 a,
 a:visited,
 a:hover,
@@ -267,6 +280,7 @@ textarea {
   font-weight: 500;
   font-size: 0.9rem;
   color: var(--dark);
+  resize: vertical;
 }
 
 [type="submit"] {
@@ -281,6 +295,36 @@ textarea {
   font-size: 0.95rem;
 }
 
+/* so nav won't be in the way */
+#skills,
+#experience,
+#works,
+#about,
+#contact {
+  scroll-margin-top: 100px;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul.flex li:not(:first-child) {
+  margin-left: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.column {
+  align-items: flex-start;
+  padding: 3rem 3rem 1.5rem 3rem;
+}
+footer li {
+  margin-top: 7px;
+}
+
 @media screen and (max-width: 768px) {
   .flex :not(.bg-light-grey),
   .portfolio {
@@ -289,6 +333,12 @@ textarea {
   .flex .social-container {
     flex-direction: row;
   }
+  .column {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   nav {
     padding: 0.3rem;
   }
@@ -357,5 +407,14 @@ textarea {
   }
   .flex .about-pic {
     margin-right: 0rem;
+  }
+
+  .negative {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  footer h4 {
+    margin-top: 10px;
   }
 }
