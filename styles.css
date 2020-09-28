@@ -325,6 +325,12 @@ footer li {
   margin-top: 7px;
 }
 
+.workExperience {
+  padding: 0.3rem;
+  color: var(--greyish);
+  list-style: inside;
+}
+
 @media screen and (max-width: 768px) {
   .flex :not(.bg-light-grey),
   .portfolio {
